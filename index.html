@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduAI</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffeef8;
+            color: #5e4b56;
+        }
+
+        .navbar {
+            background-color: #ffb6c1;
+            padding: 1rem 2rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero .text h1 {
+            color: #d36c8f;
+            font-size: 2.5rem;
+        }
+
+        .hero .text p {
+            font-size: 1.2rem;
+            color: #6d4c59;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background-color: #ffe4ec;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .card h1 {
+            font-size: 1.4rem;
+            color: #b04e6f;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.3em 0.6em;
+            font-size: 0.8em;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        .tag-text {
+            background-color: #f7a3c0;
+        }
+
+        .tag-assessment {
+            background-color: #f798b2;
+        }
+
+        .tag-writing {
+            background-color: #f47caa;
+        }
+
+        .btn {
+            margin-top: 1rem;
+            padding: 0.6rem 1.2rem;
+            background-color: #fbaed2;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #f38db9;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+            background-color: #fff0f6;
+            border: 2px solid #f7a3c0;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .popup h1 {
+            margin-top: 0;
+            color: #cc5c84;
+        }
+
+        #popbtn {
+            margin-top: 1rem;
+            background-color: #f9a6c4;
+            border: none;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #popbtn:hover {
+            background-color: #f178a1;
+        }
+
+        .footer {
+            background-color: #ffc6d6;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+            color: #6d4c59;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <h1>Content Unavailable</h1>
+        <p>The content you are trying to access is currently not available.</p>
+        <button id="popbtn">Done</button>
+    </div>
+
+    <div class="navbar">
+        <h1>EduAI</h1>
+    </div>
+
+    <div class="hero">
+        <div class="text">
+            <h1>Explore Generative AI Tools for Learning</h1>
+            <p>Boost your academic experience with smart AI-powered education tools.</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h1>AI Note Summarizer</h1>
+                <p><span class="tag tag-text">TEXT</span></p>
+                <p>Automatically summarizes long lecture notes or articles into key points.</p>
+                <button class="btn">More Info</button>
+            </div>
+
+            <div class="card">
+                <h1>Quiz Generator</h1>
+                <p><span class="tag tag-assessment">Assessment</span></p>
+                <p>Create MCQs or short answer quizzes from your study material.</p>
+                <button class="btn">More Info</button>
+            </div>
+
+            <div class="card">
+                <h1>Essay Writer</h1>
+                <p><span class="tag tag-writing">Writing</span></p>
+                <p>Generate academic essays with outlines, references, and citations.</p>
+                <button class="btn">More Info</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 EduAI Hub. Empowering with Generative Intelligence.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $(".popup").fadeIn();
+            });
+            $("#popbtn").click(function(){
+                $(".popup").fadeOut();
+            });
+        });
+    </script>
+</body>
+</html>

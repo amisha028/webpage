@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f5; /* very light pink background */
+    color: #333;
+}
+
+.navbar {
+    background-color: #FADADD;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.hero {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #D88CA4; /* deeper pastel pink for heading */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.card p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.tag {
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.tag-text {
+    background-color: #FADADD;
+    color: #333;
+}
+
+.tag-assessment {
+    background-color: #FFC6C6;
+    color: #333;
+}
+
+.tag-writing {
+    background-color: #FFDEE9;
+    color: #333;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #FADADD;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #f4c6d6;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    text-align: center;
+    max-width: 300px;
+    width: 80%;
+}
+
+#popbtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FADADD;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#popbtn:hover {
+    background-color: #f4c6d6;
+}
+
+.footer {
+    background-color: #fceef1;
+    padding: 15px;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
+
